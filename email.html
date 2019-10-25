@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Halloween Store!</title>
+      <meta name="viewport" content="width=device-width">
+      <link rel="icon" href="images/favicon.ico" />
+      <link href="normalize.css" rel="stylesheet" type="text/css" />
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="email.css" rel="stylesheet" type="text/css" />
+
+  
+   </head>
+   <body>
+      <header>
+         <img id= "headerImg" src="images/pumpkin.gif" alt= "pumpkin image" usemap="#logomap"/>
+         <map name="logomap">
+       <area shape="circle" coords="50,50,100" href="/" alt="Home">
+      </map>
+         <h2>The Halloween Store</h2>
+         <h4> For the little goblin in all of us!</h4>
+
+            <nav class="main-menu">
+            <ul id="menu">
+               <li><a href="/">Home</a></li>
+               <li><a href="#">Product List</a></li>
+               <li><a href="/personal.html">Personal</a></li>
+               <li><a href="#">Decorating Ideas</a>
+               <ul class="sub-menu">
+            <li><a href="#">Outdoor</a></li>
+            <li><a href="#">Indoor</a></li>
+            <li><a href="#">Table</a></li>
+            <li><a href="#">Treats</a></li> 
+          </ul>
+           </li>
+               <li><a href="/email.html" id = "active" >Join Email</a></li>
+            </ul>
+         </nav>
+
+      </header>
+  
+      <main>
+      <h5>Please enter the following information:</h5>
+      <form action="subscribe.html">
+        <label for="firstname">First name:</label>
+        <input  type="text" name="firstname" id="firstname" autofocus required ><br>
+        <label for="lastname">Last name:</label>
+        <input  type="text" name="lastname"  id="lastname" required><br>
+        <label for="email">Email:</label>
+        <input  type="email" name="email" id="email" required ><br>
+        <label for="zipcode">Zip Code:</label>
+        <input  type="text" name="zipcode" id="zipcode"  required pattern="[0-9]{5}"><br>
+         <input type="submit" value="Subscribe" id="submitBtn">
+</form>
+    </main>
+      <nav class="sidebar">
+            <ul>
+               <li><a href="#">Props</a></li>
+               <li><a href="#">Costumes</a></li>
+               <li><a href="#">Special FX</a></li>
+               <li><a href="#">Masks</a></li>
+            </ul>
+         </nav>
+      
+      <footer>
+         <span>&copy; 2016 Ben Murach</span>
+      </footer>
+   </body>
+</html>

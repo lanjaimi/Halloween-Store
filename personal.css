@@ -1,0 +1,42 @@
+h1 {
+  font-size: 30px;
+}
+h1::first-letter {
+  font-size: 30px;
+}
+
+#header-heading{
+  font-family: 'Creepster', cursive;
+}
+
+main h2 {
+  font-size: 25px;
+}
+
+#author {
+  font-size:13px;
+  font-weight: 100;
+}
+
+@media print {
+.non-print {
+  display:none;
+}
+
+  p, span {
+    font-family: serif;
+  }
+
+ main > h2 {
+    font-family: sans-serif;
+    border-bottom: 3px solid black;
+  }
+
+  main {
+    width: 95%;
+  }
+ 
+  body {
+    border: 0px;
+  }
+}

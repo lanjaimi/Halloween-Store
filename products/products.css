@@ -1,0 +1,241 @@
+html {
+  background-image: url("images/bats.gif");
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 0px;
+  width: 800px;
+  border: 5px solid #000;
+  background-color: white;
+  box-shadow: 5px 5px 30px #000;
+}
+
+header {
+border-bottom: 5px solid #000;
+height: 190px;
+padding: 20px 0;
+background-image: linear-gradient(to top right, white, orange, black);
+}
+
+.main-menu  {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-menu > ul {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+} 
+
+.main-menu  ul  li {
+  display: inline-block;
+  margin: 0px;
+  padding:10px 0px;
+  position: relative;
+} 
+
+.main-menu  ul  li  a {
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 10px 37px;
+} 
+
+.main-menu ul li a:hover{
+  background-color: gray;
+} 
+
+.main-menu ul li:hover .sub-menu {
+ display: block;
+ background-color: black;
+} 
+
+.main-menu ul ul li {
+  display: block;
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+}
+
+.main-menu ul ul a {
+  display:block;
+ 
+}
+
+.main-menu ul li ul {
+ position: absolute;
+ background-color: black;
+ padding: 0px;
+ margin: 0px;
+ top: 37px;
+ width: 100%;
+ display: none;
+}
+
+#active {
+ color:orange;
+}
+
+#sidebar {
+  float: left;
+  width: 160px;
+  margin: 40px 0 0 20px;
+}
+
+main {
+  padding: 20px;
+  width: 400px;
+ float: left;
+}
+
+
+h2 {
+  font-size: 45px;
+ 
+}
+ 
+h4 {
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h1::first-letter { 
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+#headerImg {
+  float: left;
+  width:110px;
+  height: 110px;
+  margin:20px 30px 30px 30px ;
+}
+
+#catImg {
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 6;
+  -webkit-animation-direction: alternate;
+}
+
+
+#sidebar a, #sidebara:visited {
+  font-weight: bold;
+  color: orange;
+}
+
+#sidebar a:hover, #sidebar a:focus {
+  background-color:rgb(245, 139, 0);
+}
+
+#sidebar ul {
+  position:relative;
+  right:30px;
+}
+
+#sidebar ul > li {
+  margin:0px;
+  padding:0px;
+  margin-bottom:15px;
+  list-style:none;
+}
+
+#sidebar ul > li > a {
+  text-decoration: none;
+  display: block;
+  color:black;
+  padding:10px;
+  background-color:orange;
+  border: 2px solid black;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  border-top: 5px solid #000;
+  padding: 20px;
+  background-image: linear-gradient(to top right, black, orange, white)
+}
+
+footer > span {
+ font-size: 15px;
+}
+
+#right-sidebar{
+  width:180px;
+  height:550px;
+  background-color: #F5DEB3;
+  float:right;
+  margin: 0px;
+  padding: 0px;
+}
+
+#right-sidebar h4 {
+  font-size: 14px;
+  position: static;
+  padding: 10px;
+}
+
+#right-sidebar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#right-sidebar li {
+  margin: 0px;
+  padding: 0px;
+}
+
+#right-sidebar img {
+  width:50px;
+  height:50px;
+  transition: width 3s linear, height 3s linear;
+}
+
+
+#right-sidebar a {
+  color: black;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+#right-sidebar a:hover, #right-sidebar a:focus  {
+  color: green;
+}
+
+#right-sidebar img:hover {
+  width:125px;
+  height:125px;
+}
+
+@keyframes move {
+  from {margin-top: 0;}
+  to {margin-top: 60px;}
+}
+
+@-webkit-keyframes  move {
+  from {margin-top: 0;}
+  to {margin-top: 60px;}
+}
